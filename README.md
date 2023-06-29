@@ -1,2 +1,0 @@
-# WEBGLTEST
-Test gangtoena webgl
