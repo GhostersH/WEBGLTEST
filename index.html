@@ -2,6 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>TEST-VR</title>
     <meta name="description" content="">
@@ -10,7 +11,7 @@
   </head>
   <body>
     <div id="unity-container">
-      <div id="unity-canvas-container">
+      <div id="unity-canvas-container" style="width: 100%; height: 100%;">
         <canvas id="unity-canvas" style="width: 100%; height: 100%;"></canvas>
       </div>
       <div id="unity-loading-bar">
@@ -18,7 +19,7 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-footer">
+      <div id="unity-header">
         <div id="unity-fullscreen-button" onclick="unityInstance.SetFullscreen(1)"></div>
         <button id="entervr" value="Enter VR" disabled>VR</button>
         <div id="unity-build-title">TEST-VR</div>
@@ -46,9 +47,6 @@
       var unityInstance = null;
       
 
-      container.style.width = "100%";
-      container.style.maxWidth = "960px";
-      canvasContainer.style.aspectRatio = "960/600";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
